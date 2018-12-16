@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="en">
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -45,25 +45,6 @@
 
 
 
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-
 
 
 
@@ -98,17 +79,17 @@
 
 
 
-<meta name="description" content="1. Runtime Analysis Notation$\Omega() &amp;lt; \theta() &amp;lt; O()$  The master theorem   $T(n) = a T(\frac{n}{b}) + n^d log^k n$    Runtime when     $n^d$ $d &amp;gt; log_b a$   $n^d log^k n$ $d = log_b a$   $">
+<meta name="description" content="Runtime Analysis Notation$\Omega() &amp;lt; \theta() &amp;lt; O()$ The master theorem$T(n) = a T(\frac{n}{b}) + n^d log^k n$     Runtime when     $n^d$ $d &amp;gt; log_b a$   $n^d log^k n$ $d = log_b a$   $n^{log">
 <meta property="og:type" content="article">
-<meta property="og:title" content="William&#39;s Blog">
+<meta property="og:title" content="CS170 Review">
 <meta property="og:url" content="z-william131.github.io/2018/12/15/cs170-review/index.html">
 <meta property="og:site_name" content="William&#39;s Blog">
-<meta property="og:description" content="1. Runtime Analysis Notation$\Omega() &amp;lt; \theta() &amp;lt; O()$  The master theorem   $T(n) = a T(\frac{n}{b}) + n^d log^k n$    Runtime when     $n^d$ $d &amp;gt; log_b a$   $n^d log^k n$ $d = log_b a$   $">
+<meta property="og:description" content="Runtime Analysis Notation$\Omega() &amp;lt; \theta() &amp;lt; O()$ The master theorem$T(n) = a T(\frac{n}{b}) + n^d log^k n$     Runtime when     $n^d$ $d &amp;gt; log_b a$   $n^d log^k n$ $d = log_b a$   $n^{log">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-12-16T01:51:09.197Z">
+<meta property="og:updated_time" content="2018-12-16T07:27:18.267Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="William&#39;s Blog">
-<meta name="twitter:description" content="1. Runtime Analysis Notation$\Omega() &amp;lt; \theta() &amp;lt; O()$  The master theorem   $T(n) = a T(\frac{n}{b}) + n^d log^k n$    Runtime when     $n^d$ $d &amp;gt; log_b a$   $n^d log^k n$ $d = log_b a$   $">
+<meta name="twitter:title" content="CS170 Review">
+<meta name="twitter:description" content="Runtime Analysis Notation$\Omega() &amp;lt; \theta() &amp;lt; O()$ The master theorem$T(n) = a T(\frac{n}{b}) + n^d log^k n$     Runtime when     $n^d$ $d &amp;gt; log_b a$   $n^d log^k n$ $d = log_b a$   $n^{log">
 
 
 
@@ -116,7 +97,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"right","display":"post","offset":12,"b2t":true,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -144,7 +125,7 @@
 
 
 
-  <title> | William's Blog</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>CS170 Review | William's Blog</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -298,7 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">CS170 Review</h1>
         
 
         <div class="post-meta">
@@ -359,13 +340,10 @@
       
 
       
-        <h3 id="1-Runtime-Analysis"><a href="#1-Runtime-Analysis" class="headerlink" title="1. Runtime Analysis"></a>1. Runtime Analysis</h3><ul>
-<li><p>Notation<br>$\Omega() &lt; \theta() &lt; O()$</p>
-</li>
-<li><p>The master theorem</p>
-</li>
-</ul>
-<p>$T(n) = a T(\frac{n}{b}) + n^d log^k n$</p>
+        <h2 id="Runtime-Analysis"><a href="#Runtime-Analysis" class="headerlink" title="Runtime Analysis"></a>Runtime Analysis</h2><ol>
+<li>Notation<br>$\Omega() &lt; \theta() &lt; O()$</li>
+<li>The master theorem<br>$T(n) = a T(\frac{n}{b}) + n^d log^k n$</li>
+</ol>
 <table>
 <thead>
 <tr>
@@ -388,23 +366,54 @@
 </tr>
 </tbody>
 </table>
-<p>Typical Examples: Mergesort, Find Median and the fast fourier transformation.</p>
-<h3 id="2-Randomized-Algorithm"><a href="#2-Randomized-Algorithm" class="headerlink" title="2. Randomized Algorithm"></a>2. Randomized Algorithm</h3><p>There are two types of randomized algorithms: Las Vegas algorithm and Monte-Carlo algorithm. The Las Vegas algorithm will always output the correct answer, but they are allowed to have large runtime for a small probability. The Monte-Carlo algorithms will always have a low runtime, but they are allowed to give wrong return values for a small probability.</p>
+<ol start="3">
+<li>Typical Examples<br>Mergesort, Find Median and the fast fourier transformation.</li>
+</ol>
+<h2 id="Randomized-Algorithm"><a href="#Randomized-Algorithm" class="headerlink" title="Randomized Algorithm"></a>Randomized Algorithm</h2><p>There are two types of randomized algorithms: <strong>Las Vegas algorithm</strong> and <strong>Monte-Carlo algorithm</strong>. The Las Vegas algorithm will always output the correct answer, but they are allowed to have large runtime for a small probability. The Monte-Carlo algorithms will always have a low runtime, but they are allowed to give wrong return values for a small probability.</p>
 <p>Typical examples including quick sort, universal hashing, bloom filter and stream algorithm</p>
-<h3 id="3-Graph"><a href="#3-Graph" class="headerlink" title="3. Graph"></a>3. Graph</h3><ul>
-<li><p>LinkedList and Matrix Representation</p>
+<h2 id="Graph"><a href="#Graph" class="headerlink" title="Graph"></a>Graph</h2><ol>
+<li>LinkedList and Matrix Representation</li>
+<li>Deep First Search<ol>
+<li>A directed graph has a circle if and only if its depth-first search reveals a back edge.</li>
+<li><strong>Topological Sort</strong>: In a dag, every edge leads to a vertex with a lower post number.</li>
+<li><strong>Find Strongly Connected Components</strong>: Run DFS on reversed graph and run DFS again on the highest post numbers.</li>
+</ol>
 </li>
-<li><p>Deep First Search</p>
+<li>Breath First Search<ol>
+<li><strong>Dijkstra’s Algorithm</strong>: Runtime $|V| log |V| + |E|$</li>
+<li><strong>Bellman-Ford Algorithm</strong>: Runtime $|V||E|$. Work on negative edges. Can detect negative circle.</li>
+</ol>
 </li>
-</ul>
-<p>A directed graph has a circle if and only if its depth-first search reveals a back edge.</p>
-<pre><code>- Topological sort: In a dag, every edge leads to a vertex with a lower post number.
-- Find strongly connected components: 
-    Run DFS on reversed graph and run DFS again on the highest post numbers.
-</code></pre><ul>
-<li>Breath First Search</li>
-</ul>
-<h3 id="4-Greedy-Algorithm"><a href="#4-Greedy-Algorithm" class="headerlink" title="4. Greedy Algorithm"></a>4. Greedy Algorithm</h3><h3 id="5-Dynamic-Programming"><a href="#5-Dynamic-Programming" class="headerlink" title="5. Dynamic Programming"></a>5. Dynamic Programming</h3><h3 id="6-NP-and-Reduction"><a href="#6-NP-and-Reduction" class="headerlink" title="6. NP and Reduction"></a>6. NP and Reduction</h3><h3 id="7-Local-improvement"><a href="#7-Local-improvement" class="headerlink" title="7. Local improvement"></a>7. Local improvement</h3>
+</ol>
+<h2 id="Greedy-Algorithm"><a href="#Greedy-Algorithm" class="headerlink" title="Greedy Algorithm"></a>Greedy Algorithm</h2><ol>
+<li>A special case in dynamic programming. There are two main ways to prove the correctness of the greedy approach: staying ahead or exchange arguments.</li>
+<li>MST:<br><strong>Kruskal’s algorithm</strong>: Union Find. Cut Property. Runtime $|E| log |E|$. Space: $|V|$<br><strong>Prim algorithm</strong>: Runtime $|V| log |V| + |E|$. Space: $|V|$</li>
+<li>Other examples:<br>Huffman Encoding, Horn Formula and Set Cover.</li>
+</ol>
+<h2 id="Dynamic-Programming"><a href="#Dynamic-Programming" class="headerlink" title="Dynamic Programming"></a>Dynamic Programming</h2><ol>
+<li>For $x_1, x_2, …, x_n$, the subproblem is $x_1, x_2, …, x_i$.</li>
+<li>For $x_1, x_2, …, x_n$, the subproblem is $x_i, x_{i+1}, …, x_j$.</li>
+<li>For $x_1, x_2, …, x_n; y_1, y_2, …, y_n$, the subproblem is $x_1,…, x_i, y_1,…, y_j$.</li>
+<li>For a tree problem, the subproblem is node $i$ and its children and grandchildren.</li>
+</ol>
+<h2 id="Linear-Programming"><a href="#Linear-Programming" class="headerlink" title="Linear Programming"></a>Linear Programming</h2><p>Minmax duality; Max flow problems</p>
+<p>Any problem can reduce to boolean combinational circuit, and the circuit value problem can reduce to a LP problem. Thus everything that is solvable can reduce to LP.</p>
+<h3 id="6-NP-Problems"><a href="#6-NP-Problems" class="headerlink" title="6. NP Problems"></a>6. NP Problems</h3><ol>
+<li>Some definations<ol>
+<li><strong>Search Problem:</strong> Any proposed solution can be checked for correctness in polynomial time</li>
+<li><strong>P:</strong> Search problems that can be solved in polynomial time</li>
+<li><strong>NP:</strong> All search problems</li>
+<li><strong>NP hard:</strong> problems that All NP problems can reduce to</li>
+<li><strong>NP complete:</strong> problems that are both NP and NP hard</li>
+</ol>
+</li>
+<li>Reduction:<br>All NP -&gt; CSAT -&gt; SAT -&gt; 3SAT -&gt; Independent Set and 3D Matching</li>
+</ol>
+<h3 id="7-Local-Improvement"><a href="#7-Local-Improvement" class="headerlink" title="7. Local Improvement"></a>7. Local Improvement</h3><ol>
+<li><strong>Backtracking</strong>: Construct subproblem that can be checked quickly. </li>
+<li><strong>Simulated Annealing</strong></li>
+</ol>
+
       
     </div>
     
@@ -424,7 +433,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="z-william131.github.io/2018/12/15/cs170-review/" title="">z-william131.github.io/2018/12/15/cs170-review/</a>
+    <a href="z-william131.github.io/2018/12/15/cs170-review/" title="CS170 Review">z-william131.github.io/2018/12/15/cs170-review/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -634,7 +643,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Runtime-Analysis"><span class="nav-number">1.</span> <span class="nav-text">1. Runtime Analysis</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Randomized-Algorithm"><span class="nav-number">2.</span> <span class="nav-text">2. Randomized Algorithm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Graph"><span class="nav-number">3.</span> <span class="nav-text">3. Graph</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Greedy-Algorithm"><span class="nav-number">4.</span> <span class="nav-text">4. Greedy Algorithm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Dynamic-Programming"><span class="nav-number">5.</span> <span class="nav-text">5. Dynamic Programming</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-NP-and-Reduction"><span class="nav-number">6.</span> <span class="nav-text">6. NP and Reduction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-Local-improvement"><span class="nav-number">7.</span> <span class="nav-text">7. Local improvement</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Runtime-Analysis"><span class="nav-number">1.</span> <span class="nav-text">Runtime Analysis</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Randomized-Algorithm"><span class="nav-number">2.</span> <span class="nav-text">Randomized Algorithm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Graph"><span class="nav-number">3.</span> <span class="nav-text">Graph</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Greedy-Algorithm"><span class="nav-number">4.</span> <span class="nav-text">Greedy Algorithm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Dynamic-Programming"><span class="nav-number">5.</span> <span class="nav-text">Dynamic Programming</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linear-Programming"><span class="nav-number">6.</span> <span class="nav-text">Linear Programming</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#6-NP-Problems"><span class="nav-number">6.1.</span> <span class="nav-text">6. NP Problems</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-Local-Improvement"><span class="nav-number">6.2.</span> <span class="nav-text">7. Local Improvement</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -673,11 +682,7 @@
 
 
 
-  <span class="post-meta-divider">|</span>
 
-
-
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
@@ -819,7 +824,7 @@
         var disqus_config = function () {
           this.page.url = 'z-william131.github.io/2018/12/15/cs170-review/';
           this.page.identifier = '2018/12/15/cs170-review/';
-          this.page.title = '';
+          this.page.title = 'CS170 Review';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://William.disqus.com/embed.js';
