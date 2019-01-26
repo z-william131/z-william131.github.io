@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Data,Model Evaluation," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -79,20 +79,17 @@
 
 
 
-<meta name="description" content="Confusion Matrix and Table of ConfusionConfusion matrix is a specific table layout that allows visualization of the performance of an algorithm, typically a supervised learning one. Here is a basic ex">
-<meta name="keywords" content="Data,Model Evaluation">
+<meta name="description" content="“The data determines the upper bound of the machine learning model. The machine learning models approximate that upper bound.” I heard these words from my mentor during my first week internship in 个推.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Common Evaluation ways for Binary Classification Model">
-<meta property="og:url" content="z-william131.github.io/2018/07/17/Common-Evaluation-Ways-for-Binary-Classification-Model/index.html">
+<meta property="og:title" content="Evaluate Data for Machine Learning">
+<meta property="og:url" content="z-william131.github.io/2019/01/25/Evaluate-Data-for-Machine-Learning/index.html">
 <meta property="og:site_name" content="William&#39;s Blog">
-<meta property="og:description" content="Confusion Matrix and Table of ConfusionConfusion matrix is a specific table layout that allows visualization of the performance of an algorithm, typically a supervised learning one. Here is a basic ex">
+<meta property="og:description" content="“The data determines the upper bound of the machine learning model. The machine learning models approximate that upper bound.” I heard these words from my mentor during my first week internship in 个推.">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="/2018/07/17/Common-Evaluation-Ways-for-Binary-Classification-Model/Confusion_Matrix.png">
-<meta property="og:updated_time" content="2018-07-19T02:31:52.111Z">
+<meta property="og:updated_time" content="2019-01-26T01:30:19.480Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Common Evaluation ways for Binary Classification Model">
-<meta name="twitter:description" content="Confusion Matrix and Table of ConfusionConfusion matrix is a specific table layout that allows visualization of the performance of an algorithm, typically a supervised learning one. Here is a basic ex">
-<meta name="twitter:image" content="/2018/07/17/Common-Evaluation-Ways-for-Binary-Classification-Model/Confusion_Matrix.png">
+<meta name="twitter:title" content="Evaluate Data for Machine Learning">
+<meta name="twitter:description" content="“The data determines the upper bound of the machine learning model. The machine learning models approximate that upper bound.” I heard these words from my mentor during my first week internship in 个推.">
 
 
 
@@ -122,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="z-william131.github.io/2018/07/17/Common-Evaluation-Ways-for-Binary-Classification-Model/"/>
+  <link rel="canonical" href="z-william131.github.io/2019/01/25/Evaluate-Data-for-Machine-Learning/"/>
 
 
 
 
 
-  <title>Common Evaluation ways for Binary Classification Model | William's Blog</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>Evaluate Data for Machine Learning | William's Blog</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -282,7 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Common Evaluation ways for Binary Classification Model</h1>
+          <h1 class="post-title" itemprop="name headline">Evaluate Data for Machine Learning</h1>
         
 
         <div class="post-meta">
@@ -294,8 +291,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-17T22:45:23-07:00">
-                2018-07-17
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-25T16:16:01-08:00">
+                2019-01-25
               </time>
             
 
@@ -304,39 +301,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="../../../../categories/CS/" itemprop="url" rel="index">
-                    <span itemprop="name">CS</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="../../../../categories/CS/Data/" itemprop="url" rel="index">
-                    <span itemprop="name">Data</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -348,7 +312,7 @@
                 </span>
                 <a href="#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/07/17/Common-Evaluation-Ways-for-Binary-Classification-Model/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2019/01/25/Evaluate-Data-for-Machine-Learning/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -376,132 +340,70 @@
       
 
       
-        <h3 id="Confusion-Matrix-and-Table-of-Confusion"><a href="#Confusion-Matrix-and-Table-of-Confusion" class="headerlink" title="Confusion Matrix and Table of Confusion"></a>Confusion Matrix and Table of Confusion</h3><p><strong>Confusion matrix</strong> is a specific table layout that allows visualization of the performance of an algorithm, typically a supervised learning one. Here is a basic example:</p>
-<p>Here is a prediction result from a classification model.</p>
-<table>
-<thead>
-<tr>
-<th>prediction</th>
-<th>1</th>
-<th>2</th>
-<th>3</th>
-<th>1</th>
-<th>1</th>
-<th>1</th>
-<th>3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>true</td>
-<td>1</td>
-<td>2</td>
-<td>2</td>
-<td>2</td>
-<td>3</td>
-<td>2</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<p>Use confusion matrix to interpret it and we get:</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>1</th>
-<th>2</th>
-<th>3</th>
-<th>True</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-<td>1</td>
-</tr>
-<tr>
-<td>2</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td>3</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Prediction</td>
-</tr>
-</tbody>
-</table>
-<p>To interpret this matrix, take look at the forth row. This mean there’s one time that we predict 1 into 3. Then we introduction a defination called <strong>table of confusion</strong>. It’s a table with two rows and two columns that reports the number of <strong>false positives, false neagatives, true positives and true negatives</strong>. Take look at our next example.</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>actual 1</th>
-<th>actual other than 1</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>predict 1</td>
-<td>1(true positive)</td>
-<td>3(false positive)</td>
-</tr>
-<tr>
-<td>predict other than 1</td>
-<td>1(true negative)</td>
-<td>2(false negative)</td>
-</tr>
-</tbody>
-</table>
-<p>So far everything is still simple. We introduce four new concepts to evaluate the performance of our model. </p>
-<img src="/2018/07/17/Common-Evaluation-Ways-for-Binary-Classification-Model/Confusion_Matrix.png" title="Confusion_Matrix">
-<p>Although all these concepts and formula are still not so hard to understand, when and which concept we should use becomes complicated. I will discuss the main differences, advantages and disadvantages of each measurement, and how to combine them together to evaluate model performance. </p>
-<h3 id="F1-Score"><a href="#F1-Score" class="headerlink" title="F1 Score"></a>F1 Score</h3><p><strong>(Positive Predictive Value) Precision</strong> represents “how many selected items are relevant”, and <strong>(True Positive Rate) Recall</strong> represents “how many relevant items are selected”. The former observes TP number in chosen dataset and the latter observes TP in original dataset. We usually use the harmonic average of both to measure test’s accuracy <strong>(F1 score)</strong>.</p>
-<p>$$F1 = \frac{2 \times recall \times precision}{recall + precision}$$</p>
-<p>The reason we use harmonic average is that the closer precision and recall are, the more reliable our measurement is. We can relate this formula to dice similarity coefficient, which is used for comparing the similarity of two samples.</p>
-<center>$$DSC = \frac{2 |X \cap Y|}{|X| + |Y|}$$</center>
-
-<p>The main drawback of using F-score is listed below:</p>
+        <p>“The data determines the upper bound of the machine learning model. The machine learning models approximate that upper bound.” I heard these words from my mentor during my first week internship in 个推. She was talking about how important it is to do data cleaning and feature engineering before building up sophisticated machine learning model. </p>
+<p>In this article, I will talk about common strategies to examine your dataset during machine learning model construction. </p>
+<h2 id="Dataset-Overview"><a href="#Dataset-Overview" class="headerlink" title="Dataset Overview"></a>Dataset Overview</h2><p>First, check the data source quality. Does the dataset come from an authoritative organization or from a personal GitHub account? Usually we can collect data from various ways. It’s important to give different weights to different data source when you want to have a comprehensive understanding about your data.</p>
+<p>Second, examine the data quantity. How many data entries are there? What is the dimension of each entry? How many missing data are there? Usually we count the missing data in three dimensions: by row, by column or by table. By answering these questions, you will have a general idea about the model complexity, the computing resources for each steps, focus between approximation error and estimation error. </p>
+<p>Third, examine the data type. Is it a static dataset or a dynamic one(time series)? How many discrete features and continuous features are there?</p>
+<h2 id="Use-Statistic-Methods"><a href="#Use-Statistic-Methods" class="headerlink" title="Use Statistic Methods"></a>Use Statistic Methods</h2><p>Usually these four kinds of statistics indicators will give a comprehensive understanding about the dataset.</p>
 <ol>
-<li>It focus on only one class. It reveals the discriminative power of each feature independently from others, but it does not indicate anything on the combination of both features. </li>
-<li>It’s biased to the majority class. For example if there are 90% male candidates and 10% female candidates and our model can simply predict all candidates are male, which will give us 100% recall and 90% precision. </li>
-<li>It doesn’t take into account the True Negative. TN can change arbitrarily without changing F-measure.</li>
+<li>Central Tendency: Mean, Median, Mode</li>
+<li>Relative Position: Max, Min, Quantile, IOR</li>
+<li>Variance and Covariance</li>
+<li>Outliers: Z-Score, Dbscan and Isolation Forest</li>
 </ol>
-<h3 id="ROC-AUC-and-Informedness"><a href="#ROC-AUC-and-Informedness" class="headerlink" title="ROC, AUC and Informedness"></a>ROC, AUC and Informedness</h3><p><strong>A ROC space</strong> depicts relative trade-offs between true positive and false positive. In binary classification , we predict a score for each instance. Given a threshold parameter T, the instance is classified as positive if X &gt; T and negative otherwise. Usually as threshold gets looser, TPR increases and FPR increases as well. Therefore, a ROC space is defined by FPR and TPR as x and y axes at various threshold settigs. We usually use <strong>AUC(Area Under the Curve)</strong> to summarize the ROC curve. </p>
-<center>$$AUC = \int_{-\infty}^{\infty} TPR(T) FPR’(T) dT$$</center>
-
-<p>AUC can be interpret as the probability that the classifier will assign a higher score to a randomly chosen positive example than to a negative example. The main drawback of using AUC is listed below:</p>
+<h2 id="Define-Outliers"><a href="#Define-Outliers" class="headerlink" title="Define Outliers"></a>Define Outliers</h2><p>The outliers can be seen as irregular data points in our dataset and can be caused by various reasons. For example, people who use fake identity shouldn’t be included in an user portrait research. Here I summarize main differences among three common ways to measure outliers. </p>
 <ol>
-<li>It doesn’t work well with small dataset, since it generlizes a step function into a continuous curve. </li>
-<li>It ignores the fact that the curve is about the tradeoffs between the different systems.</li>
-<li>AUC doesn’t tell you the costs of different kinds of errors. It will treat a 10000 dollar fraud the same as a 10 dollar fraud. </li>
-<li>It does not account for false negative cases.</li>
-<li>It’s also biased to the total amount of positive and negative cases.</li>
+<li>Z-Score<ol>
+<li>Description<ul>
+<li>(data - mean) / var</li>
+</ul>
+</li>
+<li>Advantage<ul>
+<li>Good on gaussian distribution</li>
+</ul>
+</li>
+<li>Disadvantage<ul>
+<li>Not good for high dimensional feature space</li>
+</ul>
+</li>
 </ol>
-<h3 id="Accuracy"><a href="#Accuracy" class="headerlink" title="Accuracy"></a>Accuracy</h3><center>$$Accuracy = \frac{TP + TN}{TP + FP + TN + FN}$$</center>
-
-<p>Accuracy is one of the most common used stastics data. The formula is pretty clear so let’s go straight to its drawback. The main disadvantage is that iff TN is large, the influence of TP becomes minor.</p>
-<h3 id="Matthew-Correlation-Coefficient"><a href="#Matthew-Correlation-Coefficient" class="headerlink" title="Matthew Correlation Coefficient"></a>Matthew Correlation Coefficient</h3><center>$$MCC =<br>\frac{\sum_{n} (P_n - \overline{R}) (S_n - \overline{S})}{\sqrt{\sum_n (P_n - \overline{P})^2 \sum_n (P_n - \overline{P})^2}}<br>$$</center>
-
-<p>where $\overline{P}$ represents the mean of prediction, $P_n$ represents the nth prediction, $\overline{S}$ represents the mean of observation and $S_n$ represents the nth obeservation. </p>
-<p>The fomula above can be transformed to following one, which is what we commonly see.</p>
-<center>$$MCC = \frac{TP \times TN - FP \times FN}{TP + TN + FP + FN}$$</center>
-
-<p>Matthew Correlation Coefficient use the correlation between the prediction and observation to evaluate the model performance. It’s so far seen as one of the best measurements for binary classification, since it takes into account the balance ratios of the four confusion matrix categories. </p>
-<h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>Generalize the confusion matrix trades off some features in data. Under different circumstances, we evaluate four confusion matrix categories differently. Each measurement pays attention to some particular aspects in dataset. Therefore, it’s important to know when and how to use these tools to get a comprehensive understanding about our model. </p>
-<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a>Reference:</h3><ol>
-<li><a href="https://arxiv.org/pdf/1503.06410.pdf" target="_blank" rel="noopener">What the F-measure doesn’t measure…Features, Flaws, Fallacies and Fixes</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Receiver_operating_characteristic" target="_blank" rel="noopener">Receiver operating characteristic: WikiPedia</a></li>
-<li><a href="https://www.sciencedirect.com/science/article/pii/0005279575901099" target="_blank" rel="noopener">Comparison of the predicted and observed secondary structure of T4 phage lysozyme</a></li>
+</li>
+<li>Dbscan<ol>
+<li>Description<ul>
+<li>Count the number of neighbors</li>
+</ul>
+</li>
+<li>Advantage<ul>
+<li>No assumption on the distribution of feature space</li>
+<li>good on multi-dimensional features</li>
+</ul>
+</li>
+<li>Disadvantage<ul>
+<li>Need to scale featureshard to select the optimal parameters</li>
+</ul>
+</li>
 </ol>
+</li>
+<li>Isolation forest<ol>
+<li>Description<ul>
+<li>randomly split sample by some feature</li>
+</ul>
+</li>
+<li>Advantage<ul>
+<li>Less parameter and therefore it’s robust and easy to optimize</li>
+<li>no scaling needed</li>
+<li>no assumption to distribution needed</li>
+</ul>
+</li>
+<li>Disadvantage<ul>
+<li>Training time can be very long</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="Data-Visualization"><a href="#Data-Visualization" class="headerlink" title="Data Visualization"></a>Data Visualization</h2><p>It’s important to construct graph when you evaluate your dataset. Histogram is usually used in regression and Scatter is usually used in classification. Box is also commonly used in data visualization.</p>
 
       
     </div>
@@ -522,7 +424,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="z-william131.github.io/2018/07/17/Common-Evaluation-Ways-for-Binary-Classification-Model/" title="Common Evaluation ways for Binary Classification Model">z-william131.github.io/2018/07/17/Common-Evaluation-Ways-for-Binary-Classification-Model/</a>
+    <a href="z-william131.github.io/2019/01/25/Evaluate-Data-for-Machine-Learning/" title="Evaluate Data for Machine Learning">z-william131.github.io/2019/01/25/Evaluate-Data-for-Machine-Learning/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -535,14 +437,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="../../../../tags/Data/" rel="tag"># Data</a>
-          
-            <a href="../../../../tags/Model-Evaluation/" rel="tag"># Model Evaluation</a>
-          
-        </div>
-      
 
       
       
@@ -552,15 +446,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="../../../../2018/12/15/cs170-review/" rel="next" title="CS170 Review">
+                <i class="fa fa-chevron-left"></i> CS170 Review
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="../../../12/15/cs170-review/" rel="prev" title="CS170 Review">
-                CS170 Review <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -740,7 +634,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Confusion-Matrix-and-Table-of-Confusion"><span class="nav-number">1.</span> <span class="nav-text">Confusion Matrix and Table of Confusion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#F1-Score"><span class="nav-number">2.</span> <span class="nav-text">F1 Score</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ROC-AUC-and-Informedness"><span class="nav-number">3.</span> <span class="nav-text">ROC, AUC and Informedness</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Accuracy"><span class="nav-number">4.</span> <span class="nav-text">Accuracy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Matthew-Correlation-Coefficient"><span class="nav-number">5.</span> <span class="nav-text">Matthew Correlation Coefficient</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Conclusion"><span class="nav-number">6.</span> <span class="nav-text">Conclusion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reference"><span class="nav-number">7.</span> <span class="nav-text">Reference:</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Dataset-Overview"><span class="nav-number">1.</span> <span class="nav-text">Dataset Overview</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Use-Statistic-Methods"><span class="nav-number">2.</span> <span class="nav-text">Use Statistic Methods</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Define-Outliers"><span class="nav-number">3.</span> <span class="nav-text">Define Outliers</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Data-Visualization"><span class="nav-number">4.</span> <span class="nav-text">Data Visualization</span></a></li></ol></div>
             
 
           </div>
@@ -919,9 +813,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'z-william131.github.io/2018/07/17/Common-Evaluation-Ways-for-Binary-Classification-Model/';
-          this.page.identifier = '2018/07/17/Common-Evaluation-Ways-for-Binary-Classification-Model/';
-          this.page.title = 'Common Evaluation ways for Binary Classification Model';
+          this.page.url = 'z-william131.github.io/2019/01/25/Evaluate-Data-for-Machine-Learning/';
+          this.page.identifier = '2019/01/25/Evaluate-Data-for-Machine-Learning/';
+          this.page.title = 'Evaluate Data for Machine Learning';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://William.disqus.com/embed.js';

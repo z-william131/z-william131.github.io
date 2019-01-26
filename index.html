@@ -259,6 +259,200 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="z-william131.github.io2019/01/25/Evaluate-Data-for-Machine-Learning/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="乔为 William">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="William's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="2019/01/25/Evaluate-Data-for-Machine-Learning/" itemprop="url">Evaluate Data for Machine Learning</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-25T16:16:01-08:00">
+                2019-01-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="2019/01/25/Evaluate-Data-for-Machine-Learning/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2019/01/25/Evaluate-Data-for-Machine-Learning/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>“The data determines the upper bound of the machine learning model. The machine learning models approximate that upper bound.” I heard these words from my mentor during my first week internship in 个推. She was talking about how important it is to do data cleaning and feature engineering before building up sophisticated machine learning model. </p>
+<p>In this article, I will talk about common strategies to examine your dataset during machine learning model construction. </p>
+<h2 id="Dataset-Overview"><a href="#Dataset-Overview" class="headerlink" title="Dataset Overview"></a>Dataset Overview</h2><p>First, check the data source quality. Does the dataset come from an authoritative organization or from a personal GitHub account? Usually we can collect data from various ways. It’s important to give different weights to different data source when you want to have a comprehensive understanding about your data.</p>
+<p>Second, examine the data quantity. How many data entries are there? What is the dimension of each entry? How many missing data are there? Usually we count the missing data in three dimensions: by row, by column or by table. By answering these questions, you will have a general idea about the model complexity, the computing resources for each steps, focus between approximation error and estimation error. </p>
+<p>Third, examine the data type. Is it a static dataset or a dynamic one(time series)? How many discrete features and continuous features are there?</p>
+<h2 id="Use-Statistic-Methods"><a href="#Use-Statistic-Methods" class="headerlink" title="Use Statistic Methods"></a>Use Statistic Methods</h2><p>Usually these four kinds of statistics indicators will give a comprehensive understanding about the dataset.</p>
+<ol>
+<li>Central Tendency: Mean, Median, Mode</li>
+<li>Relative Position: Max, Min, Quantile, IOR</li>
+<li>Variance and Covariance</li>
+<li>Outliers: Z-Score, Dbscan and Isolation Forest</li>
+</ol>
+<h2 id="Define-Outliers"><a href="#Define-Outliers" class="headerlink" title="Define Outliers"></a>Define Outliers</h2><p>The outliers can be seen as irregular data points in our dataset and can be caused by various reasons. For example, people who use fake identity shouldn’t be included in an user portrait research. Here I summarize main differences among three common ways to measure outliers. </p>
+<ol>
+<li>Z-Score<ol>
+<li>Description<ul>
+<li>(data - mean) / var</li>
+</ul>
+</li>
+<li>Advantage<ul>
+<li>Good on gaussian distribution</li>
+</ul>
+</li>
+<li>Disadvantage<ul>
+<li>Not good for high dimensional feature space</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>Dbscan<ol>
+<li>Description<ul>
+<li>Count the number of neighbors</li>
+</ul>
+</li>
+<li>Advantage<ul>
+<li>No assumption on the distribution of feature space</li>
+<li>good on multi-dimensional features</li>
+</ul>
+</li>
+<li>Disadvantage<ul>
+<li>Need to scale featureshard to select the optimal parameters</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>Isolation forest<ol>
+<li>Description<ul>
+<li>randomly split sample by some feature</li>
+</ul>
+</li>
+<li>Advantage<ul>
+<li>Less parameter and therefore it’s robust and easy to optimize</li>
+<li>no scaling needed</li>
+<li>no assumption to distribution needed</li>
+</ul>
+</li>
+<li>Disadvantage<ul>
+<li>Training time can be very long</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="Data-Visualization"><a href="#Data-Visualization" class="headerlink" title="Data Visualization"></a>Data Visualization</h2><p>It’s important to construct graph when you evaluate your dataset. Histogram is usually used in regression and Scatter is usually used in classification. Box is also commonly used in data visualization.</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="z-william131.github.io2018/12/15/cs170-review/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -290,7 +484,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-15T08:41:45+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-15T08:41:45-08:00">
                 2018-12-15
               </time>
             
@@ -493,7 +687,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-17T22:45:23+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-17T22:45:23-07:00">
                 2018-07-17
               </time>
             
@@ -788,7 +982,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -886,7 +1080,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
