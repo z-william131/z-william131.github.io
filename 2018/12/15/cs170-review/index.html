@@ -2,26 +2,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
 <html class="theme-next gemini use-motion" lang="en">
 <head>
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222"/>
 
 
 
@@ -34,41 +32,30 @@
 
 
 
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon-next.png?v=7.2.0">
 
 
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32-next.png?v=7.2.0">
 
 
-  
-  
-  <link href="../../../../lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16-next.png?v=7.2.0">
 
 
-
-
-
-
-
-<link href="../../../../lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="../../../../css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="../../../../images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="../../../../images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="../../../../images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="../../../../images/logo.svg?v=5.1.4" color="#222">
+  <link rel="mask-icon" href="../images/logo.svg?v=7.2.0" color="#222">
 
 
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+
+<link rel="stylesheet" href="../css/main.css?v=7.2.0"/>
+
+
+
+
+
+
+<link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css?v=4.7.0"/>
 
 
 
@@ -77,55 +64,67 @@
 
 
 
-
-
-<meta name="description" content="Runtime Analysis Notation$\Omega() &amp;lt; \theta() &amp;lt; O()$ The master theorem$T(n) = a T(\frac{n}{b}) + n^d log^k n$     Runtime when     $n^d$ $d &amp;gt; log_b a$   $n^d log^k n$ $d = log_b a$   $n^{log">
-<meta property="og:type" content="article">
-<meta property="og:title" content="CS170 Review">
-<meta property="og:url" content="z-william131.github.io/2018/12/15/cs170-review/index.html">
-<meta property="og:site_name" content="William&#39;s Blog">
-<meta property="og:description" content="Runtime Analysis Notation$\Omega() &amp;lt; \theta() &amp;lt; O()$ The master theorem$T(n) = a T(\frac{n}{b}) + n^d log^k n$     Runtime when     $n^d$ $d &amp;gt; log_b a$   $n^d log^k n$ $d = log_b a$   $n^{log">
-<meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-12-16T07:28:48.525Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CS170 Review">
-<meta name="twitter:description" content="Runtime Analysis Notation$\Omega() &amp;lt; \theta() &amp;lt; O()$ The master theorem$T(n) = a T(\frac{n}{b}) + n^d log^k n$     Runtime when     $n^d$ $d &amp;gt; log_b a$   $n^d log^k n$ $d = log_b a$   $n^{log">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
+<script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
     scheme: 'Gemini',
-    version: '5.1.4',
-    sidebar: {"position":"right","display":"post","offset":12,"b2t":true,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
+    version: '7.2.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
     algolia: {
       applicationID: '',
       apiKey: '',
       indexName: '',
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    translation: {
+      copy_button: 'Copy',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
     }
   };
 </script>
 
+  <meta name="description" content="Runtime Analysis Notation$\Omega() &amp;lt; \theta() &amp;lt; O()$ The master theorem$T(n) = a T(\frac{n}{b}) + n^d log^k n$     Runtime when     $n^d$ $d &amp;gt; log_b a$   $n^d log^k n$ $d = log_b a$   $n^{log">
+<meta name="keywords" content="Lecture Notes,Algorithm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CS170 Review">
+<meta property="og:url" content="z-william131.github.io/2018/12/15/cs170-review/index.html">
+<meta property="og:site_name" content="William&#39;s Blog">
+<meta property="og:description" content="Runtime Analysis Notation$\Omega() &amp;lt; \theta() &amp;lt; O()$ The master theorem$T(n) = a T(\frac{n}{b}) + n^d log^k n$     Runtime when     $n^d$ $d &amp;gt; log_b a$   $n^d log^k n$ $d = log_b a$   $n^{log">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-07-25T08:06:27.405Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CS170 Review">
+<meta name="twitter:description" content="Runtime Analysis Notation$\Omega() &amp;lt; \theta() &amp;lt; O()$ The master theorem$T(n) = a T(\frac{n}{b}) + n^d log^k n$     Runtime when     $n^d$ $d &amp;gt; log_b a$   $n^d log^k n$ $d = log_b a$   $n^{log">
 
 
+
+
+
+  
+  
   <link rel="canonical" href="z-william131.github.io/2018/12/15/cs170-review/"/>
 
 
 
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
-
-  <title>CS170 Review | William's Blog</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+  <title>CS170 Review | William's Blog</title>
   
 
 
@@ -134,6 +133,35 @@
 
 
 
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </head>
 
@@ -144,28 +172,31 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-right page-post-detail">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+  <div class="site-meta">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">William's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
         <p class="site-subtitle">还在稳定自己的三观。</p>
       
+    
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -173,65 +204,34 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            Home
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-about">
-          <a href="" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            About
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-tags">
-          <a href="" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            Tags
-          </a>
-        </li>
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
       
-        
-        <li class="menu-item menu-item-categories">
-          <a href="" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            Categories
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archives
-          </a>
-        </li>
-      
+    
+
+    
+
+    <a rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br/>Home</a>
+
+  </li>
 
       
+      
     </ul>
+  
+
   
 
   
@@ -239,12 +239,19 @@
 
 
 
- </div>
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+            
+
+          
           <div id="content" class="content">
             
 
@@ -257,21 +264,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="z-william131.github.io">
+    <link itemprop="mainEntityOfPage" href="z-william131.github.io"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="乔为 William">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="../../../../images/avatar.jpeg">
+      <meta itemprop="name" content="乔为 William"/>
+      <meta itemprop="description" content=""/>
+      <meta itemprop="image" content="../../../../images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="William's Blog">
+      <meta itemprop="name" content="William's Blog"/>
     </span>
 
     
@@ -279,48 +288,89 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">CS170 Review</h1>
+          <h1 class="post-title" itemprop="name headline">CS170 Review
+
+              
+            
+          </h1>
         
 
         <div class="post-meta">
-          <span class="post-time">
-            
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-15T08:41:45-08:00">
-                2018-12-15
-              </time>
-            
 
-            
+              
+                
+              
 
-            
-          </span>
-
+              <time title="Created: 2018-12-15 08:41:45" itemprop="dateCreated datePublished" datetime="2018-12-15T08:41:45-08:00">2018-12-15</time>
+            </span>
           
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
+
+            
+              <span class="post-meta-item">
                 <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
+                  <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <a href="#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/12/15/cs170-review/" itemprop="commentCount"></span>
-                </a>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-07-25 01:06:27" itemprop="dateModified" datetime="2019-07-25T01:06:27-07:00">2019-07-25</time>
               </span>
             
           
 
           
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="../../../../categories/CS/" itemprop="url" rel="index"><span itemprop="name">CS</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="../../../../categories/CS/Algorithm/" itemprop="url" rel="index"><span itemprop="name">Algorithm</span></a></span>
+
+                
+                
+              
+            </span>
           
 
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br/>
           
 
           
@@ -340,7 +390,7 @@
       
 
       
-        <h2 id="Runtime-Analysis"><a href="#Runtime-Analysis" class="headerlink" title="Runtime Analysis"></a>Runtime Analysis</h2><ol>
+        <h3 id="Runtime-Analysis"><a href="#Runtime-Analysis" class="headerlink" title="Runtime Analysis"></a>Runtime Analysis</h3><ol>
 <li>Notation<br>$\Omega() &lt; \theta() &lt; O()$</li>
 <li>The master theorem<br>$T(n) = a T(\frac{n}{b}) + n^d log^k n$</li>
 </ol>
@@ -369,9 +419,9 @@
 <ol start="3">
 <li>Typical Examples<br>Mergesort, Find Median and the fast fourier transformation.</li>
 </ol>
-<h2 id="Randomized-Algorithm"><a href="#Randomized-Algorithm" class="headerlink" title="Randomized Algorithm"></a>Randomized Algorithm</h2><p>There are two types of randomized algorithms: <strong>Las Vegas algorithm</strong> and <strong>Monte-Carlo algorithm</strong>. The Las Vegas algorithm will always output the correct answer, but they are allowed to have large runtime for a small probability. The Monte-Carlo algorithms will always have a low runtime, but they are allowed to give wrong return values for a small probability.</p>
+<h3 id="Randomized-Algorithm"><a href="#Randomized-Algorithm" class="headerlink" title="Randomized Algorithm"></a>Randomized Algorithm</h3><p>There are two types of randomized algorithms: <strong>Las Vegas algorithm</strong> and <strong>Monte-Carlo algorithm</strong>. The Las Vegas algorithm will always output the correct answer, but they are allowed to have large runtime for a small probability. The Monte-Carlo algorithms will always have a low runtime, but they are allowed to give wrong return values for a small probability.</p>
 <p>Typical examples including quick sort, universal hashing, bloom filter and stream algorithm</p>
-<h2 id="Graph"><a href="#Graph" class="headerlink" title="Graph"></a>Graph</h2><ol>
+<h3 id="Graph"><a href="#Graph" class="headerlink" title="Graph"></a>Graph</h3><ol>
 <li>LinkedList and Matrix Representation</li>
 <li>Deep First Search<ol>
 <li>A directed graph has a circle if and only if its depth-first search reveals a back edge.</li>
@@ -385,18 +435,18 @@
 </ol>
 </li>
 </ol>
-<h2 id="Greedy-Algorithm"><a href="#Greedy-Algorithm" class="headerlink" title="Greedy Algorithm"></a>Greedy Algorithm</h2><ol>
+<h3 id="Greedy-Algorithm"><a href="#Greedy-Algorithm" class="headerlink" title="Greedy Algorithm"></a>Greedy Algorithm</h3><ol>
 <li>A special case in dynamic programming. There are two main ways to prove the correctness of the greedy approach: staying ahead or exchange arguments.</li>
 <li>MST:<br><strong>Kruskal’s algorithm</strong>: Union Find. Cut Property. Runtime $|E| log |E|$. Space: $|V|$<br><strong>Prim algorithm</strong>: Runtime $|V| log |V| + |E|$. Space: $|V|$</li>
 <li>Other examples:<br>Huffman Encoding, Horn Formula and Set Cover.</li>
 </ol>
-<h2 id="Dynamic-Programming"><a href="#Dynamic-Programming" class="headerlink" title="Dynamic Programming"></a>Dynamic Programming</h2><ol>
+<h3 id="Dynamic-Programming"><a href="#Dynamic-Programming" class="headerlink" title="Dynamic Programming"></a>Dynamic Programming</h3><ol>
 <li>For $x_1, x_2, …, x_n$, the subproblem is $x_1, x_2, …, x_i$.</li>
 <li>For $x_1, x_2, …, x_n$, the subproblem is $x_i, x_{i+1}, …, x_j$.</li>
 <li>For $x_1, x_2, …, x_n; y_1, y_2, …, y_n$, the subproblem is $x_1,…, x_i, y_1,…, y_j$.</li>
 <li>For a tree problem, the subproblem is node $i$ and its children and grandchildren.</li>
 </ol>
-<h2 id="Linear-Programming"><a href="#Linear-Programming" class="headerlink" title="Linear Programming"></a>Linear Programming</h2><p>Minmax duality; Max flow problems</p>
+<h3 id="Linear-Programming"><a href="#Linear-Programming" class="headerlink" title="Linear Programming"></a>Linear Programming</h3><p>Minmax duality; Max flow problems</p>
 <p>Any problem can reduce to boolean combinational circuit, and the circuit value problem can reduce to a LP problem. Thus everything that is solvable can reduce to LP.</p>
 <h3 id="NP-Problems"><a href="#NP-Problems" class="headerlink" title="NP Problems"></a>NP Problems</h3><ol>
 <li>Some definations<ol>
@@ -416,6 +466,13 @@
 
       
     </div>
+
+    
+
+    
+      
+    
+
     
     
     
@@ -423,28 +480,24 @@
     
 
     
-
+      
     
-      <div>
-        <ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>Post author:</strong>
-    乔为 William
-  </li>
-  <li class="post-copyright-link">
-    <strong>Post link:</strong>
-    <a href="z-william131.github.io/2018/12/15/cs170-review/" title="CS170 Review">z-william131.github.io/2018/12/15/cs170-review/</a>
-  </li>
-  <li class="post-copyright-license">
-    <strong>Copyright Notice: </strong>
-    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
-  </li>
-</ul>
+    
 
-      </div>
     
 
     <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="../../../../tags/Lecture-Notes/" rel="tag"># Lecture Notes</a>
+          
+            <a href="../../../../tags/Algorithm/" rel="tag"># Algorithm</a>
+          
+        </div>
       
 
       
@@ -483,28 +536,11 @@
   </article>
 
 
-
-    <div class="post-spread">
-      
-    </div>
   </div>
 
 
           </div>
           
-
-
-          
-
-  
-    <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
-    </div>
 
   
 
@@ -523,7 +559,6 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
-    
     <div class="sidebar-inner">
 
       
@@ -539,131 +574,195 @@
         </ul>
       
 
-      <section class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
+
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image"
-                src="../../../../images/avatar.jpeg"
-                alt="乔为 William" />
-            
-              <p class="site-author-name" itemprop="name">乔为 William</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
+  
+  <p class="site-author-name" itemprop="name">乔为 William</p>
+  <div class="site-description motion-element" itemprop="description"></div>
+</div>
 
-          <nav class="site-state motion-element">
 
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="../../../../archives/">
-              
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">posts</span>
-                </a>
-              </div>
-            
+  <nav class="site-state motion-element">
+    
+      <div class="site-state-item site-state-posts">
+        
+          <a href="../archives">
+        
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+    
 
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                
-                  <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">categories</span>
-                
-              </div>
-            
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">categories</span>
+        </a>
+      </div>
+    
 
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">tags</span>
-                
-              </div>
-            
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="../tags/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">tags</span>
+        </a>
+      </div>
+    
+  </nav>
 
-          </nav>
+
+
+
+
+
+
+  <div class="links-of-author motion-element">
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://github.com/z-william131" title="GitHub &rarr; https://github.com/z-william131" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="mailto:z.william131@gmail.com" title="Email &rarr; mailto:z.william131@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>Email</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://www.zhihu.com/people/william-zhang-69-84" title="Zhihu &rarr; https://www.zhihu.com/people/william-zhang-69-84" rel="noopener" target="_blank"><i class="fa fa-fw fa-globe"></i>Zhihu</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://www.linkedin.com/in/william-zhang-17b032b5" title="Linkedin &rarr; https://www.linkedin.com/in/william-zhang-17b032b5" rel="noopener" target="_blank"><i class="fa fa-fw fa-linkedin-square"></i>Linkedin</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://www.facebook.com/william.zhang.0131" title="Facebook &rarr; https://www.facebook.com/william.zhang.0131" rel="noopener" target="_blank"><i class="fa fa-fw fa-facebook"></i>Facebook</a>
+      </span>
+    
+  </div>
+
+
+
+
+
+
 
           
-
           
-            <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/z-william131" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="mailto:z.william131@gmail.com" target="_blank" title="Email">
-                      
-                        <i class="fa fa-fw fa-envelope"></i>Email</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://www.zhihu.com/people/william-zhang-69-84" target="_blank" title="Zhihu">
-                      
-                        <i class="fa fa-fw fa-globe"></i>Zhihu</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://www.linkedin.com/in/william-zhang-17b032b5" target="_blank" title="Linkedin">
-                      
-                        <i class="fa fa-fw fa-linkedin-square"></i>Linkedin</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://www.facebook.com/william.zhang.0131" target="_blank" title="Facebook">
-                      
-                        <i class="fa fa-fw fa-facebook"></i>Facebook</a>
-                  </span>
-                
-            </div>
-          
-
-          
-          
-
-          
-          
-
-          
-
         </div>
-      </section>
+      </div>
 
       
       <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
           <div class="post-toc">
 
             
-              
+            
+            
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Runtime-Analysis"><span class="nav-number">1.</span> <span class="nav-text">Runtime Analysis</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Randomized-Algorithm"><span class="nav-number">2.</span> <span class="nav-text">Randomized Algorithm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Graph"><span class="nav-number">3.</span> <span class="nav-text">Graph</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Greedy-Algorithm"><span class="nav-number">4.</span> <span class="nav-text">Greedy Algorithm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Dynamic-Programming"><span class="nav-number">5.</span> <span class="nav-text">Dynamic Programming</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linear-Programming"><span class="nav-number">6.</span> <span class="nav-text">Linear Programming</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#NP-Problems"><span class="nav-number">6.1.</span> <span class="nav-text">NP Problems</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Local-Improvement"><span class="nav-number">6.2.</span> <span class="nav-text">Local Improvement</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Runtime-Analysis"><span class="nav-number">1.</span> <span class="nav-text">Runtime Analysis</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Randomized-Algorithm"><span class="nav-number">2.</span> <span class="nav-text">Randomized Algorithm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Graph"><span class="nav-number">3.</span> <span class="nav-text">Graph</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Greedy-Algorithm"><span class="nav-number">4.</span> <span class="nav-text">Greedy Algorithm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dynamic-Programming"><span class="nav-number">5.</span> <span class="nav-text">Dynamic Programming</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linear-Programming"><span class="nav-number">6.</span> <span class="nav-text">Linear Programming</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NP-Problems"><span class="nav-number">7.</span> <span class="nav-text">NP Problems</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Local-Improvement"><span class="nav-number">8.</span> <span class="nav-text">Local Improvement</span></a></li></ol></div>
             
 
           </div>
-        </section>
+        </div>
       <!--/noindex-->
       
 
       
-        <div class="back-to-top">
-          <i class="fa fa-arrow-up"></i>
-          
-        </div>
-      
 
     </div>
   </aside>
+  <div id="sidebar-dimmer"></div>
 
 
         
@@ -672,17 +771,17 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love">
+        <div class="copyright">&copy; 2017 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">乔为 William</span>
 
   
+
+  
 </div>
 
-
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
@@ -692,6 +791,7 @@
 
 
         
+
 
 
 
@@ -704,6 +804,15 @@
     </footer>
 
     
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
 
     
 
@@ -711,7 +820,7 @@
 
   
 
-<script type="text/javascript">
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
@@ -725,15 +834,6 @@
 
 
 
-  
-
-
-
-
-
-
-  
-  
 
 
 
@@ -743,51 +843,30 @@
 
   
   
-    <script type="text/javascript" src="../../../../lib/jquery/index.js?v=2.1.3"></script>
-  
 
-  
-  
-    <script type="text/javascript" src="../../../../lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
 
-  
-  
-    <script type="text/javascript" src="../../../../lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
 
-  
-  
-    <script type="text/javascript" src="../../../../lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
 
-  
-  
-    <script type="text/javascript" src="../../../../lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
 
-  
-  
-    <script type="text/javascript" src="../../../../lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
 
-  
-  
-    <script type="text/javascript" src="../../../../lib/three/three.min.js"></script>
-  
 
-  
-  
-    <script type="text/javascript" src="../../../../lib/three/canvas_lines.min.js"></script>
-  
 
 
   
+  <script src="../../../../lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="../../../../lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="../../../../lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
 
-  <script type="text/javascript" src="../../../../js/src/utils.js?v=5.1.4"></script>
 
-  <script type="text/javascript" src="../../../../js/src/motion.js?v=5.1.4"></script>
+
+  <script src="../../../../js/utils.js?v=7.2.0"></script>
+
+  <script src="../../../../js/motion.js?v=7.2.0"></script>
 
 
 
@@ -795,46 +874,127 @@
   
 
 
-  <script type="text/javascript" src="../../../../js/src/affix.js?v=5.1.4"></script>
+  <script src="../../../../js/affix.js?v=7.2.0"></script>
 
-  <script type="text/javascript" src="../../../../js/src/schemes/pisces.js?v=5.1.4"></script>
+  <script src="../../../../js/schemes/pisces.js?v=7.2.0"></script>
 
-
-
-  
-  <script type="text/javascript" src="../../../../js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="../../../../js/src/post-details.js?v=5.1.4"></script>
 
 
 
   
+  <script src="../../../../js/scrollspy.js?v=7.2.0"></script>
+<script src="../../../../js/post-details.js?v=7.2.0"></script>
 
 
-  <script type="text/javascript" src="../../../../js/src/bootstrap.js?v=5.1.4"></script>
 
+  <script src="../../../../js/next-boot.js?v=7.2.0"></script>
 
+  
+
+  
 
   
 
 
   
+  
+
+  
+  
+
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
     
-      <script id="dsq-count-scr" src="https://William.disqus.com/count.js" async></script>
-    
+  
 
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'z-william131.github.io/2018/12/15/cs170-review/';
-          this.page.identifier = '2018/12/15/cs170-review/';
-          this.page.title = 'CS170 Review';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://William.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// GET RESPONSIVE HEIGHT PASSED FROM IFRAME
+
+window.addEventListener("message", function(e) {
+  var data = e.data;
+  if ((typeof data === 'string') && (data.indexOf('ciu_embed') > -1)) {
+    var featureID = data.split(':')[1];
+    var height = data.split(':')[2];
+    $(`iframe[data-feature=${featureID}]`).height(parseInt(height) + 30);
+  }
+}, false);
+</script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config("");
 </script>
@@ -852,20 +1012,6 @@
 </script>
 <!-- End: Injected MathJax -->
 <!-- hexo-inject:end -->
-    
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
 
 
 
@@ -873,33 +1019,6 @@
 
 
 
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-
-
-  
 
   
 

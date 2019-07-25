@@ -2,26 +2,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
 <html class="theme-next gemini use-motion" lang="en">
 <head>
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222"/>
 
 
 
@@ -34,41 +32,30 @@
 
 
 
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon-next.png?v=7.2.0">
 
 
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32-next.png?v=7.2.0">
 
 
-  
-  
-  <link href="lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16-next.png?v=7.2.0">
 
 
-
-
-
-
-
-<link href="lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+  <link rel="mask-icon" href="../images/logo.svg?v=7.2.0" color="#222">
 
 
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+
+<link rel="stylesheet" href="../css/main.css?v=7.2.0"/>
+
+
+
+
+
+
+<link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css?v=4.7.0"/>
 
 
 
@@ -77,9 +64,37 @@
 
 
 
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.2.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    translation: {
+      copy_button: 'Copy',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
+    }
+  };
+</script>
 
-
-<meta property="og:type" content="website">
+  <meta property="og:type" content="website">
 <meta property="og:title" content="William&#39;s Blog">
 <meta property="og:url" content="z-william131.github.io/index.html">
 <meta property="og:site_name" content="William&#39;s Blog">
@@ -89,39 +104,22 @@
 
 
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Gemini',
-    version: '5.1.4',
-    sidebar: {"position":"right","display":"post","offset":12,"b2t":true,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
 
 
-
+  
+  
   <link rel="canonical" href="z-william131.github.io/"/>
 
 
 
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
-
-  <title>William's Blog</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+  <title>William's Blog</title>
   
 
 
@@ -130,6 +128,35 @@
 
 
 
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </head>
 
@@ -140,29 +167,32 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-right 
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left 
   page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+  <div class="site-meta">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">William's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
         <p class="site-subtitle">还在稳定自己的三观。</p>
       
+    
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -170,65 +200,34 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            Home
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-about">
-          <a href="" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            About
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-tags">
-          <a href="" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            Tags
-          </a>
-        </li>
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
       
-        
-        <li class="menu-item menu-item-categories">
-          <a href="" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            Categories
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archives
-          </a>
-        </li>
-      
+    
+
+    
+
+    <a rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br/>Home</a>
+
+  </li>
 
       
+      
     </ul>
+  
+
   
 
   
@@ -236,12 +235,19 @@
 
 
 
- </div>
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+            
+
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -254,21 +260,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="z-william131.github.io2019/01/25/Evaluate-Data-for-Machine-Learning/">
+    <link itemprop="mainEntityOfPage" href="z-william131.github.io2019/07/24/findMedian-sample-code/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="乔为 William">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="乔为 William"/>
+      <meta itemprop="description" content=""/>
+      <meta itemprop="image" content="images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="William's Blog">
+      <meta itemprop="name" content="William's Blog"/>
     </span>
 
     
@@ -278,48 +286,866 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="2019/01/25/Evaluate-Data-for-Machine-Learning/" itemprop="url">Evaluate Data for Machine Learning</a></h1>
+                
+                <a href="2019/07/24/findMedian-sample-code/" class="post-title-link" itemprop="url">findMedian Sample Code</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
-          <span class="post-time">
-            
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-25T16:16:01-08:00">
-                2019-01-25
-              </time>
-            
 
-            
+              
+                
+              
 
-            
-          </span>
-
+              <time title="Created: 2019-07-24 00:46:01" itemprop="dateCreated datePublished" datetime="2019-07-24T00:46:01-07:00">2019-07-24</time>
+            </span>
           
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
+
+            
+              <span class="post-meta-item">
                 <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
+                  <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <a href="2019/01/25/Evaluate-Data-for-Machine-Learning/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2019/01/25/Evaluate-Data-for-Machine-Learning/" itemprop="commentCount"></span>
-                </a>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-07-25 01:13:27" itemprop="dateModified" datetime="2019-07-25T01:13:27-07:00">2019-07-25</time>
               </span>
             
           
 
           
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="categories/CS/" itemprop="url" rel="index"><span itemprop="name">CS</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="categories/CS/Algorithm/" itemprop="url" rel="index"><span itemprop="name">Algorithm</span></a></span>
+
+                
+                
+              
+            </span>
           
 
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br/>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="Sample-code-of-FindMedian-Algorithm"><a href="#Sample-code-of-FindMedian-Algorithm" class="headerlink" title="Sample code of FindMedian Algorithm."></a>Sample code of FindMedian Algorithm.</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><span class="line">chunkSize = 5</span><br><span class="line"></span><br><span class="line">def findMedian(lst):</span><br><span class="line">	if len(lst) == 0:</span><br><span class="line">		return None</span><br><span class="line">	if len(lst) % 2 == 0:</span><br><span class="line">		num1 = findKth(lst, len(lst)//2)</span><br><span class="line">		num2 = findKth(lst, len(lst)//2 - 1)</span><br><span class="line">		num = (num1 + num2) * 1.0 / 2</span><br><span class="line">	else:</span><br><span class="line">		num = findKth(lst, len(lst)//2)</span><br><span class="line"></span><br><span class="line">	print(&quot;result: &quot; + str(num))</span><br><span class="line">	return num</span><br><span class="line"></span><br><span class="line">def findKth(lst, k):</span><br><span class="line">	if len(lst) == 0:</span><br><span class="line">		return None</span><br><span class="line"></span><br><span class="line">	if len(lst) == 1:</span><br><span class="line">		return lst[0]</span><br><span class="line"></span><br><span class="line">	medians = []</span><br><span class="line">	for i in range(0, len(lst), chunkSize):</span><br><span class="line">		chunk = lst[i:min(i + chunkSize, len(lst))]</span><br><span class="line">		chunk.sort()</span><br><span class="line">		median = chunk[len(chunk)//2]</span><br><span class="line">		medians.append(median)</span><br><span class="line"></span><br><span class="line">	medianOfMedians = findKth(medians, len(medians)//2)</span><br><span class="line">	# print(&quot;medianofmedians: &quot; + str(medianOfMedians))</span><br><span class="line"></span><br><span class="line">	high = []</span><br><span class="line">	low = []</span><br><span class="line">	same = []</span><br><span class="line"></span><br><span class="line">	for num in lst:</span><br><span class="line">		if num &lt; medianOfMedians:</span><br><span class="line">			low.append(num)</span><br><span class="line">		elif num &gt; medianOfMedians:</span><br><span class="line">			high.append(num)</span><br><span class="line">		else:</span><br><span class="line">			same.append(num)</span><br><span class="line"></span><br><span class="line">	if len(low) &gt; k:</span><br><span class="line">		return findKth(low, k)</span><br><span class="line">	elif len(low) + len(same) &gt; k:</span><br><span class="line">		return medianOfMedians</span><br><span class="line">	else:</span><br><span class="line">		return findKth(high, k - len(low) - len(same))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">assert findMedian([]) == None</span><br><span class="line"></span><br><span class="line">assert findMedian([2]) == 2</span><br><span class="line"></span><br><span class="line">assert findMedian([5,3]) == 4.0</span><br><span class="line"></span><br><span class="line">assert findMedian([1,3]) == 2.0</span><br><span class="line"></span><br><span class="line">assert findMedian([5,2,6]) == 5</span><br><span class="line"></span><br><span class="line">assert findMedian([5,3,1]) == 3</span><br><span class="line"></span><br><span class="line">assert findMedian([5,6,0,1]) == 3.0</span><br><span class="line"></span><br><span class="line">assert findMedian([5,2,6,2,10,5]) == 5.0</span><br><span class="line"></span><br><span class="line">assert findMedian([5,2,6,2,10,5,14]) == 5</span><br><span class="line"></span><br><span class="line">assert findMedian([5,2,6,23,2,10,5,14]) == 5.5</span><br><span class="line"></span><br><span class="line">assert findMedian([5,2,6,23,2,10,2, 5,14]) == 5</span><br><span class="line"></span><br><span class="line">assert findMedian([5,2,6,23,2,10,2, 5,14, 5]) == 5.0</span><br><span class="line"></span><br><span class="line">assert findMedian([5,2,6,23,2,10,2, 5,14, 12, 1349, 2, 349, 5, 10]) == 6</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="z-william131.github.io2019/07/24/mongodb-overview/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="乔为 William"/>
+      <meta itemprop="description" content=""/>
+      <meta itemprop="image" content="images/avatar.gif"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="William's Blog"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="2019/07/24/mongodb-overview/" class="post-title-link" itemprop="url">Mongodb Overview</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-07-24 00:45:35" itemprop="dateCreated datePublished" datetime="2019-07-24T00:45:35-07:00">2019-07-24</time>
+            </span>
+          
+
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-07-25 01:13:37" itemprop="dateModified" datetime="2019-07-25T01:13:37-07:00">2019-07-25</time>
+              </span>
+            
+          
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br/>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Recently I read the mongoDB’s documentation. Here I listed some important features of MongoDB that are different from other databases’.</p>
+<h3 id="What-is-MongoDB"><a href="#What-is-MongoDB" class="headerlink" title="What is MongoDB?"></a>What is MongoDB?</h3><p>It’s a <code>NoSQL document</code> database.</p>
+<h3 id="How-is-data-stored-in-MongoDB-How-does-MongoDB-provide-durability-How-does-MongoDB-handle-large-files"><a href="#How-is-data-stored-in-MongoDB-How-does-MongoDB-provide-durability-How-does-MongoDB-handle-large-files" class="headerlink" title="How is data stored in MongoDB? How does MongoDB provide durability? How does MongoDB handle large files?"></a>How is data stored in MongoDB? How does MongoDB provide durability? How does MongoDB handle large files?</h3><p>The storage engine is the primary component of MongoDb responsible for managing data, <code>both in memory and on disk</code>. You can choose the appropriate storage engine to suit your application.<br>MongoDB use <code>write-ahead</code> logging to <code>on-dis</code> journal files to provide durability and prevent failture. It uses GridFS to handle large file.</p>
+<h3 id="What-kind-of-operations-can-MongoDB-perform"><a href="#What-kind-of-operations-can-MongoDB-perform" class="headerlink" title="What kind of operations can MongoDB perform?"></a>What kind of operations can MongoDB perform?</h3><p>Most of the SQL operations work well including aggreation. The new MongoDB has join feature but the speed probably won’t be that good compared with others.</p>
+<h3 id="Any-interesting-features-in-MongoDB-structure-What-are-indexes-in-MongoDB"><a href="#Any-interesting-features-in-MongoDB-structure-What-are-indexes-in-MongoDB" class="headerlink" title="Any interesting features in MongoDB structure? What are indexes in MongoDB?"></a>Any interesting features in MongoDB structure? What are indexes in MongoDB?</h3><p>The basic structure is <code>Database.Collection.Documents(usually Json Format)</code>. Each document has a <code>unique id</code> used as a primary key.</p>
+<p>Indexes are special structures in MongoDB, which stores a small portion of the data set in an easy to traverse form. There are various kinds of indexes that MongoDB supports.</p>
+<p>MongoDB also support <code>geospatical</code> data querying as well as <code>reference link</code> between two different documents.</p>
+<h3 id="What-are-some-common-administration-tools-used-in-MongoDB"><a href="#What-are-some-common-administration-tools-used-in-MongoDB" class="headerlink" title="What are some common administration tools used in MongoDB?"></a>What are some common administration tools used in MongoDB?</h3><p><code>Profiler</code> is used to track commend’s performance.<br><code>Change streams</code> allow applications to access real-time data changes without the complexity and risk of tailing the log.</p>
+<h3 id="How-replication-works-in-MongoDB"><a href="#How-replication-works-in-MongoDB" class="headerlink" title="How replication works in MongoDB?"></a>How replication works in MongoDB?</h3><p>The replication design in MongoDB is really similar to Kafka. It has a primary node for all the write operations and can use any node for read operations. <code>Heartbeat</code> is used among nodes to show the node’s current condition. When the primary node fails, an eligible secondary node would hold an <code>election</code> to elect itself the new primary. Other secondary nodes would check various conditions such as whether their have stable connections with the candidate without long delay in data transformation. If the candidate has more than half vote, it will be selected as the primary node. There are also nodes called <code>Arbiter</code> that are considered as vote only.</p>
+<h3 id="What-is-sharding-in-MongoDB"><a href="#What-is-sharding-in-MongoDB" class="headerlink" title="What is sharding in MongoDB?"></a>What is sharding in MongoDB?</h3><p>The procedure of storing data records across multiple machines. We carefully choose a sharding key to distribute the documents in a collections. <code>The sharding key can&#39;t be changed.</code></p>
+<h3 id="What-other-interesting-features-do-you-think-MongoDB-has"><a href="#What-other-interesting-features-do-you-think-MongoDB-has" class="headerlink" title="What other interesting features do you think MongoDB has?"></a>What other interesting features do you think MongoDB has?</h3><p>I haven’t used it much and learned it only by reading documentation, so here are simply some random notes I have so for.</p>
+<ol>
+<li>It’s really convenient to create and run function in MongoDB. </li>
+<li>You can customize prompt to for example display your database and hostname.</li>
+<li>It accepts retryable write that allows drivers to automatically retry certain write operation a single time if they encounter network errors.</li>
+<li>MongoDB also support <code>transactions</code> to ensure atomicity for updates to multiple documents or consistency between reads to multiple documents.</li>
+</ol>
+<h3 id="What-are-the-drawbacks-of-MongoDB"><a href="#What-are-the-drawbacks-of-MongoDB" class="headerlink" title="What are the drawbacks of MongoDB?"></a>What are the drawbacks of MongoDB?</h3><ol>
+<li>It doesn’t support Join.</li>
+<li>It is a memory hog. Because MongoDB stores key names for each value pairs. There is data redundancy since there is no join.</li>
+<li>The scaling ability and pipeline operations are not so well compared with other NoSQL solutions. </li>
+<li>The transaction can only happen at the document level. </li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="z-william131.github.io2019/07/24/kafka-overview/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="乔为 William"/>
+      <meta itemprop="description" content=""/>
+      <meta itemprop="image" content="images/avatar.gif"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="William's Blog"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="2019/07/24/kafka-overview/" class="post-title-link" itemprop="url">Kafka Overview</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-07-24 00:45:27" itemprop="dateCreated datePublished" datetime="2019-07-24T00:45:27-07:00">2019-07-24</time>
+            </span>
+          
+
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-07-25 01:13:25" itemprop="dateModified" datetime="2019-07-25T01:13:25-07:00">2019-07-25</time>
+              </span>
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="categories/CS/" itemprop="url" rel="index"><span itemprop="name">CS</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="categories/CS/Message-Queue/" itemprop="url" rel="index"><span itemprop="name">Message Queue</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br/>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Sometimes the interviewer will ask about your previous project background, you don’t want them to hear something like “You know what? I used a lot of fancy technology for that project, but I know nothing about these technologies except how to find out the API that I need.”</p>
+<p>The notes below is written during my last internship after reading the Kafka Documentation. The notes are presented as interview questions to help those who still struggle with finding a nice job. (AKA me)</p>
+<h3 id="What-is-Kafka"><a href="#What-is-Kafka" class="headerlink" title="What is Kafka?"></a>What is Kafka?</h3><p>Kafka is a message broker project that is written in Scala. It uses Zookeeper to store offset values of messages. It uses TCP to manage communication between the clients and the servers. It relies heavily on the filesystem and dis for storing and caching messages. The most popular client for Kafka is in Java. </p>
+<h3 id="What-are-the-main-components-of-Kafka"><a href="#What-are-the-main-components-of-Kafka" class="headerlink" title="What are the main components of Kafka?"></a>What are the main components of Kafka?</h3><ol>
+<li><p>Topic<br>The message stream that belongs to the same pattern.</p>
+</li>
+<li><p>Producer<br>It helps in publishing messages to the topic.</p>
+</li>
+<li><p>Broker<br>This is a set of various servers where all published data is stored.</p>
+</li>
+<li><p>Consumer<br>It subscribes to the different topics and fetch data from the brokers.</p>
+</li>
+</ol>
+<h3 id="What-is-the-data-structure-of-Kafka-stream"><a href="#What-is-the-data-structure-of-Kafka-stream" class="headerlink" title="What is the data structure of Kafka stream?"></a>What is the data structure of Kafka stream?</h3><p>A record represents a single data entry pushed by producer. A topic partition is an ordered, immutable sequence of records that is continually appended to a structured commit log. Partition has a very similar data structure with Queue. The records in the partitions are each assigned a sequential id number called <code>offset</code> taht uniquely identifies each record within the partition. A <code>topic</code> contains multiple partitions. It can be seen as a channel that categories different producers’ input. </p>
+<h3 id="How-does-data-streamming-work-in-Kafka"><a href="#How-does-data-streamming-work-in-Kafka" class="headerlink" title="How does data streamming work in Kafka?"></a>How does data streamming work in Kafka?</h3><p>The topic partition can be seen as a unit of parallelism in Kafka stream. Therefore the throughput of most operations are bounded by the number of partitions. </p>
+<p>The Kafka Producer first declares some specfic server lists and topic. Then it can start to upload data to some topic. We can customize the destination of our data stream, but be aware to balance the number of records among different partitions. The sending process can be done asynchronously. We can also choose when to send the next record. It can be determined by whether the leader partition has commited or whether all replications have commited. </p>
+<p>The Kafka Stream can manage data from an input topic to an output topic. The pipeline process is based on MapReduce and can perform all the common database operations.</p>
+<p>The Kafka Consumer pulls data from brokers. It can subscribe to some specific topic or retrive all data. Data pulling always starts from the last commited offset. The commit operation updates the consumer’s offset in the partition. When and how we call <code>commit</code> determines what kind of message delivery guarantees we want to have. We can also set up consumer group name for each consumer. The consumers within a same group read one data and two different consumers groups read two copies of the data. </p>
+<h3 id="What-kind-of-message-delivery-guarantees-do-Kafka-has"><a href="#What-kind-of-message-delivery-guarantees-do-Kafka-has" class="headerlink" title="What kind of message delivery guarantees do Kafka has?"></a>What kind of message delivery guarantees do Kafka has?</h3><ol>
+<li><p>At Most Once<br>It means that we can either successfully get our message or we lose it. When we commits right after pulling out data, server might be down before we finish processing it. When we restart the server, since we have already updated the partition offset, the consumer will continue to read records from the new offset and thus we lost our data. </p>
+</li>
+<li><p>At Least Once<br>It means that we can either successfully get our message or we get duplicated data. When we commits after finishing process the data, server might be down between the time we finish processing the data and we commit the offsets. When we restart the server, the consumer will start reading data from our last commited offset and process the data. This leads to process the data twice.</p>
+</li>
+<li><p>Exactly Once<br>It means that we can always get our message once. To hold that, we need to add both commiting and processing data into a transaction. Although <code>exactly once</code> seems to be the perfect solution, holding a transaction might reduce the processing speed. The most common strategy right now is <code>at least once</code>.</p>
+</li>
+</ol>
+<h3 id="How-to-choose-the-number-of-partitions-in-one-topic"><a href="#How-to-choose-the-number-of-partitions-in-one-topic" class="headerlink" title="How to choose the number of partitions in one topic?"></a>How to choose the number of partitions in one topic?</h3><p>Usually more partitions mean higher throughput. However, more paritions in one topic lead to more leader partitions for one topic. When a broker is shut down uncleanly, partitions with a leader on that broker become temporaily unavailable, and they need to wait till Kafka move the leaders to some other replicas. If the broker is shut down uncleanly, the observed unavailability could be proportional to the number of partitions. Although in general, unclean failures are rare, but for those who care about availablity in those cases, the number of partitions can’t be too high. </p>
+<p>Also, if the number of replication is high, we might experience some latency between pushing data and polling data since we need to sync among all replications for every write. </p>
+<h3 id="How-does-Kafka-handle-server-break-down-TODO"><a href="#How-does-Kafka-handle-server-break-down-TODO" class="headerlink" title="How does Kafka handle server break down? (TODO)"></a>How does Kafka handle server break down? (TODO)</h3><p>We can set the number of replication for each topic partition. Each partition has a single leader and zero or more followers. All writes go to the leader of the partition and read can go to any replication. Usually the leader should distributed evenly among brokers so that one broken down server won’t affect much. </p>
+<h3 id="What-does-Kafka-guarantees-at-a-high-level"><a href="#What-does-Kafka-guarantees-at-a-high-level" class="headerlink" title="What does Kafka guarantees at a high-level?"></a>What does Kafka guarantees at a high-level?</h3><ol>
+<li><p>Messages sent by a producer to a particular topic partition will be appended in the order they are sent. That is, if a record M1 is sent by the same producer as a record M2, and M1 is sent first, then M1 will have a lower offset than M2 and appear earlier in the log.</p>
+</li>
+<li><p>A consumer instance sees records in the order they are stored in the log.</p>
+</li>
+<li><p>For a topic with replication factor N, we will tolerate up to N-1 server failures without losing any records committed to the log.</p>
+</li>
+</ol>
+<h3 id="TBD-4-7-replication"><a href="#TBD-4-7-replication" class="headerlink" title="TBD 4.7 replication"></a>TBD 4.7 replication</h3>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="z-william131.github.io2019/07/24/redis-overview/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="乔为 William"/>
+      <meta itemprop="description" content=""/>
+      <meta itemprop="image" content="images/avatar.gif"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="William's Blog"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="2019/07/24/redis-overview/" class="post-title-link" itemprop="url">Redis Overview</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-07-24 00:45:07" itemprop="dateCreated datePublished" datetime="2019-07-24T00:45:07-07:00">2019-07-24</time>
+            </span>
+          
+
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-07-25 01:17:13" itemprop="dateModified" datetime="2019-07-25T01:17:13-07:00">2019-07-25</time>
+              </span>
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="categories/CS/" itemprop="url" rel="index"><span itemprop="name">CS</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="categories/CS/Database/" itemprop="url" rel="index"><span itemprop="name">Database</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br/>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Sometimes the interviewer will ask about your previous project background, you don’t want them to hear something like “You know what? I used a lot of fancy technology for that project, but I know nothing about these technologies except how to find out the API that I need.”</p>
+<p>The notes below is written during my last internship after reading the Redis Documentation. The notes are presented as interview questions to help those who still struggle with finding a nice job. (AKA me)</p>
+<h3 id="What-is-Redis"><a href="#What-is-Redis" class="headerlink" title="What is Redis?"></a>What is Redis?</h3><p>Redis = REmote Dictionary Server. It is a key-value database where values can contain complex data types with atomic operations defined on those data types.</p>
+<h3 id="How-is-data-stored-in-Redis"><a href="#How-is-data-stored-in-Redis" class="headerlink" title="How is data stored in Redis?"></a>How is data stored in Redis?</h3><p>Redis is an in-memory database, so it represents a trade off where very very high write and read speed is achieved with the limitation of data sets that can’t be larger than memory.</p>
+<h3 id="What-are-the-limitation-of-Redis"><a href="#What-are-the-limitation-of-Redis" class="headerlink" title="What are the limitation of Redis?"></a>What are the limitation of Redis?</h3><ol>
+<li>It is single threaded.</li>
+<li>It has significant overhead for persistence.</li>
+<li>It is not deployed widely.</li>
+</ol>
+<h3 id="Some-interesting-features-I-found"><a href="#Some-interesting-features-I-found" class="headerlink" title="Some interesting features I found"></a>Some interesting features I found</h3><ol>
+<li>Redis is implemented by Linked List. </li>
+<li>Redis can be used as a message queue or pub-sub server. </li>
+<li>It supports Hyperloglogs. It is a probabilistic data structure used in order to count unique things that trade memory for precision.</li>
+<li>Redis automatically create and remove keys.</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="z-william131.github.io2019/01/25/Evaluate-Data-for-Machine-Learning/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="乔为 William"/>
+      <meta itemprop="description" content=""/>
+      <meta itemprop="image" content="images/avatar.gif"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="William's Blog"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="2019/01/25/Evaluate-Data-for-Machine-Learning/" class="post-title-link" itemprop="url">Evaluate Data for Machine Learning</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-01-25 16:16:01" itemprop="dateCreated datePublished" datetime="2019-01-25T16:16:01-08:00">2019-01-25</time>
+            </span>
+          
+
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-07-25 01:05:36" itemprop="dateModified" datetime="2019-07-25T01:05:36-07:00">2019-07-25</time>
+              </span>
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="categories/CS/" itemprop="url" rel="index"><span itemprop="name">CS</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="categories/CS/Machine-Learning/" itemprop="url" rel="index"><span itemprop="name">Machine Learning</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br/>
           
 
           
@@ -343,17 +1169,17 @@
           
             <p>“The data determines the upper bound of the machine learning model. The machine learning models approximate that upper bound.” I heard these words from my mentor during my first week internship in 个推. She was talking about how important it is to do data cleaning and feature engineering before building up sophisticated machine learning model. </p>
 <p>In this article, I will talk about common strategies to examine your dataset during machine learning model construction. </p>
-<h2 id="Dataset-Overview"><a href="#Dataset-Overview" class="headerlink" title="Dataset Overview"></a>Dataset Overview</h2><p>First, check the data source quality. Does the dataset come from an authoritative organization or from a personal GitHub account? Usually we can collect data from various ways. It’s important to give different weights to different data source when you want to have a comprehensive understanding about your data.</p>
+<h3 id="Dataset-Overview"><a href="#Dataset-Overview" class="headerlink" title="Dataset Overview"></a>Dataset Overview</h3><p>First, check the data source quality. Does the dataset come from an authoritative organization or from a personal GitHub account? Usually we can collect data from various ways. It’s important to give different weights to different data source when you want to have a comprehensive understanding about your data.</p>
 <p>Second, examine the data quantity. How many data entries are there? What is the dimension of each entry? How many missing data are there? Usually we count the missing data in three dimensions: by row, by column or by table. By answering these questions, you will have a general idea about the model complexity, the computing resources for each steps, focus between approximation error and estimation error. </p>
 <p>Third, examine the data type. Is it a static dataset or a dynamic one(time series)? How many discrete features and continuous features are there?</p>
-<h2 id="Use-Statistic-Methods"><a href="#Use-Statistic-Methods" class="headerlink" title="Use Statistic Methods"></a>Use Statistic Methods</h2><p>Usually these four kinds of statistics indicators will give a comprehensive understanding about the dataset.</p>
+<h3 id="Use-Statistic-Methods"><a href="#Use-Statistic-Methods" class="headerlink" title="Use Statistic Methods"></a>Use Statistic Methods</h3><p>Usually these four kinds of statistics indicators will give a comprehensive understanding about the dataset.</p>
 <ol>
 <li>Central Tendency: Mean, Median, Mode</li>
 <li>Relative Position: Max, Min, Quantile, IOR</li>
 <li>Variance and Covariance</li>
 <li>Outliers: Z-Score, Dbscan and Isolation Forest</li>
 </ol>
-<h2 id="Define-Outliers"><a href="#Define-Outliers" class="headerlink" title="Define Outliers"></a>Define Outliers</h2><p>The outliers can be seen as irregular data points in our dataset and can be caused by various reasons. For example, people who use fake identity shouldn’t be included in an user portrait research. Here I summarize main differences among three common ways to measure outliers. </p>
+<h3 id="Define-Outliers"><a href="#Define-Outliers" class="headerlink" title="Define Outliers"></a>Define Outliers</h3><p>The outliers can be seen as irregular data points in our dataset and can be caused by various reasons. For example, people who use fake identity shouldn’t be included in an user portrait research. Here I summarize main differences among three common ways to measure outliers. </p>
 <ol>
 <li>Z-Score<ol>
 <li>Description<ul>
@@ -404,18 +1230,26 @@
 </ol>
 </li>
 </ol>
-<h2 id="Data-Visualization"><a href="#Data-Visualization" class="headerlink" title="Data Visualization"></a>Data Visualization</h2><p>It’s important to construct graph when you evaluate your dataset. Histogram is usually used in regression and Scatter is usually used in classification. Box is also commonly used in data visualization.</p>
+<h3 id="Data-Visualization"><a href="#Data-Visualization" class="headerlink" title="Data Visualization"></a>Data Visualization</h3><p>It’s important to construct graph when you evaluate your dataset. Histogram is usually used in regression and Scatter is usually used in classification. Box is also commonly used in data visualization.</p>
 
           
         
       
     </div>
+
+    
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -448,21 +1282,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="z-william131.github.io2018/12/15/cs170-review/">
+    <link itemprop="mainEntityOfPage" href="z-william131.github.io2018/12/15/cs170-review/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="乔为 William">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="乔为 William"/>
+      <meta itemprop="description" content=""/>
+      <meta itemprop="image" content="images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="William's Blog">
+      <meta itemprop="name" content="William's Blog"/>
     </span>
 
     
@@ -472,48 +1308,89 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="2018/12/15/cs170-review/" itemprop="url">CS170 Review</a></h1>
+                
+                <a href="2018/12/15/cs170-review/" class="post-title-link" itemprop="url">CS170 Review</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
-          <span class="post-time">
-            
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-15T08:41:45-08:00">
-                2018-12-15
-              </time>
-            
 
-            
+              
+                
+              
 
-            
-          </span>
-
+              <time title="Created: 2018-12-15 08:41:45" itemprop="dateCreated datePublished" datetime="2018-12-15T08:41:45-08:00">2018-12-15</time>
+            </span>
           
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
+
+            
+              <span class="post-meta-item">
                 <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
+                  <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <a href="2018/12/15/cs170-review/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/12/15/cs170-review/" itemprop="commentCount"></span>
-                </a>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-07-25 01:06:27" itemprop="dateModified" datetime="2019-07-25T01:06:27-07:00">2019-07-25</time>
               </span>
             
           
 
           
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="categories/CS/" itemprop="url" rel="index"><span itemprop="name">CS</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="categories/CS/Algorithm/" itemprop="url" rel="index"><span itemprop="name">Algorithm</span></a></span>
+
+                
+                
+              
+            </span>
           
 
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br/>
           
 
           
@@ -535,7 +1412,7 @@
       
         
           
-            <h2 id="Runtime-Analysis"><a href="#Runtime-Analysis" class="headerlink" title="Runtime Analysis"></a>Runtime Analysis</h2><ol>
+            <h3 id="Runtime-Analysis"><a href="#Runtime-Analysis" class="headerlink" title="Runtime Analysis"></a>Runtime Analysis</h3><ol>
 <li>Notation<br>$\Omega() &lt; \theta() &lt; O()$</li>
 <li>The master theorem<br>$T(n) = a T(\frac{n}{b}) + n^d log^k n$</li>
 </ol>
@@ -564,9 +1441,9 @@
 <ol start="3">
 <li>Typical Examples<br>Mergesort, Find Median and the fast fourier transformation.</li>
 </ol>
-<h2 id="Randomized-Algorithm"><a href="#Randomized-Algorithm" class="headerlink" title="Randomized Algorithm"></a>Randomized Algorithm</h2><p>There are two types of randomized algorithms: <strong>Las Vegas algorithm</strong> and <strong>Monte-Carlo algorithm</strong>. The Las Vegas algorithm will always output the correct answer, but they are allowed to have large runtime for a small probability. The Monte-Carlo algorithms will always have a low runtime, but they are allowed to give wrong return values for a small probability.</p>
+<h3 id="Randomized-Algorithm"><a href="#Randomized-Algorithm" class="headerlink" title="Randomized Algorithm"></a>Randomized Algorithm</h3><p>There are two types of randomized algorithms: <strong>Las Vegas algorithm</strong> and <strong>Monte-Carlo algorithm</strong>. The Las Vegas algorithm will always output the correct answer, but they are allowed to have large runtime for a small probability. The Monte-Carlo algorithms will always have a low runtime, but they are allowed to give wrong return values for a small probability.</p>
 <p>Typical examples including quick sort, universal hashing, bloom filter and stream algorithm</p>
-<h2 id="Graph"><a href="#Graph" class="headerlink" title="Graph"></a>Graph</h2><ol>
+<h3 id="Graph"><a href="#Graph" class="headerlink" title="Graph"></a>Graph</h3><ol>
 <li>LinkedList and Matrix Representation</li>
 <li>Deep First Search<ol>
 <li>A directed graph has a circle if and only if its depth-first search reveals a back edge.</li>
@@ -580,18 +1457,18 @@
 </ol>
 </li>
 </ol>
-<h2 id="Greedy-Algorithm"><a href="#Greedy-Algorithm" class="headerlink" title="Greedy Algorithm"></a>Greedy Algorithm</h2><ol>
+<h3 id="Greedy-Algorithm"><a href="#Greedy-Algorithm" class="headerlink" title="Greedy Algorithm"></a>Greedy Algorithm</h3><ol>
 <li>A special case in dynamic programming. There are two main ways to prove the correctness of the greedy approach: staying ahead or exchange arguments.</li>
 <li>MST:<br><strong>Kruskal’s algorithm</strong>: Union Find. Cut Property. Runtime $|E| log |E|$. Space: $|V|$<br><strong>Prim algorithm</strong>: Runtime $|V| log |V| + |E|$. Space: $|V|$</li>
 <li>Other examples:<br>Huffman Encoding, Horn Formula and Set Cover.</li>
 </ol>
-<h2 id="Dynamic-Programming"><a href="#Dynamic-Programming" class="headerlink" title="Dynamic Programming"></a>Dynamic Programming</h2><ol>
+<h3 id="Dynamic-Programming"><a href="#Dynamic-Programming" class="headerlink" title="Dynamic Programming"></a>Dynamic Programming</h3><ol>
 <li>For $x_1, x_2, …, x_n$, the subproblem is $x_1, x_2, …, x_i$.</li>
 <li>For $x_1, x_2, …, x_n$, the subproblem is $x_i, x_{i+1}, …, x_j$.</li>
 <li>For $x_1, x_2, …, x_n; y_1, y_2, …, y_n$, the subproblem is $x_1,…, x_i, y_1,…, y_j$.</li>
 <li>For a tree problem, the subproblem is node $i$ and its children and grandchildren.</li>
 </ol>
-<h2 id="Linear-Programming"><a href="#Linear-Programming" class="headerlink" title="Linear Programming"></a>Linear Programming</h2><p>Minmax duality; Max flow problems</p>
+<h3 id="Linear-Programming"><a href="#Linear-Programming" class="headerlink" title="Linear Programming"></a>Linear Programming</h3><p>Minmax duality; Max flow problems</p>
 <p>Any problem can reduce to boolean combinational circuit, and the circuit value problem can reduce to a LP problem. Thus everything that is solvable can reduce to LP.</p>
 <h3 id="NP-Problems"><a href="#NP-Problems" class="headerlink" title="NP Problems"></a>NP Problems</h3><ol>
 <li>Some definations<ol>
@@ -613,12 +1490,20 @@
         
       
     </div>
+
+    
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -651,21 +1536,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="z-william131.github.io2018/07/17/Common-Evaluation-Ways-for-Binary-Classification-Model/">
+    <link itemprop="mainEntityOfPage" href="z-william131.github.io2018/07/17/Common-Evaluation-Ways-for-Binary-Classification-Model/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="乔为 William">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="乔为 William"/>
+      <meta itemprop="description" content=""/>
+      <meta itemprop="image" content="images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="William's Blog">
+      <meta itemprop="name" content="William's Blog"/>
     </span>
 
     
@@ -675,33 +1562,54 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="2018/07/17/Common-Evaluation-Ways-for-Binary-Classification-Model/" itemprop="url">Common Evaluation ways for Binary Classification Model</a></h1>
+                
+                <a href="2018/07/17/Common-Evaluation-Ways-for-Binary-Classification-Model/" class="post-title-link" itemprop="url">Common Evaluation ways for Binary Classification Model</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
-          <span class="post-time">
-            
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-17T22:45:23-07:00">
-                2018-07-17
-              </time>
-            
 
-            
+              
+                
+              
 
-            
-          </span>
+              <time title="Created: 2018-07-17 22:45:23" itemprop="dateCreated datePublished" datetime="2018-07-17T22:45:23-07:00">2018-07-17</time>
+            </span>
+          
 
           
-            <span class="post-category" >
             
-              <span class="post-meta-divider">|</span>
+
             
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-07-25 01:06:31" itemprop="dateModified" datetime="2019-07-25T01:06:31-07:00">2019-07-25</time>
+              </span>
+            
+          
+
+          
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
@@ -709,22 +1617,14 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="categories/CS/" itemprop="url" rel="index">
-                    <span itemprop="name">CS</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="categories/CS/" itemprop="url" rel="index"><span itemprop="name">CS</span></a></span>
 
                 
                 
                   , 
                 
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="categories/CS/Data/" itemprop="url" rel="index">
-                    <span itemprop="name">Data</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="categories/CS/Data/" itemprop="url" rel="index"><span itemprop="name">Data</span></a></span>
 
                 
                 
@@ -734,22 +1634,17 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="2018/07/17/Common-Evaluation-Ways-for-Binary-Classification-Model/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/07/17/Common-Evaluation-Ways-for-Binary-Classification-Model/" itemprop="commentCount"></span>
-                </a>
-              </span>
             
           
 
           
           
 
+          
+
+          
+
+          <br/>
           
 
           
@@ -902,12 +1797,20 @@
         
       
     </div>
+
+    
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -940,9 +1843,6 @@
           </div>
           
 
-
-          
-
         </div>
         
           
@@ -956,122 +1856,184 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
-    
     <div class="sidebar-inner">
 
       
 
       
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
+
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image"
-                src="/images/avatar.jpeg"
-                alt="乔为 William" />
-            
-              <p class="site-author-name" itemprop="name">乔为 William</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
+  
+  <p class="site-author-name" itemprop="name">乔为 William</p>
+  <div class="site-description motion-element" itemprop="description"></div>
+</div>
 
-          <nav class="site-state motion-element">
 
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">posts</span>
-                </a>
-              </div>
-            
+  <nav class="site-state motion-element">
+    
+      <div class="site-state-item site-state-posts">
+        
+          <a href="../archives">
+        
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+    
 
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                
-                  <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">categories</span>
-                
-              </div>
-            
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">categories</span>
+        </a>
+      </div>
+    
 
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">tags</span>
-                
-              </div>
-            
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="../tags/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">tags</span>
+        </a>
+      </div>
+    
+  </nav>
 
-          </nav>
+
+
+
+
+
+
+  <div class="links-of-author motion-element">
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://github.com/z-william131" title="GitHub &rarr; https://github.com/z-william131" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="mailto:z.william131@gmail.com" title="Email &rarr; mailto:z.william131@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>Email</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://www.zhihu.com/people/william-zhang-69-84" title="Zhihu &rarr; https://www.zhihu.com/people/william-zhang-69-84" rel="noopener" target="_blank"><i class="fa fa-fw fa-globe"></i>Zhihu</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://www.linkedin.com/in/william-zhang-17b032b5" title="Linkedin &rarr; https://www.linkedin.com/in/william-zhang-17b032b5" rel="noopener" target="_blank"><i class="fa fa-fw fa-linkedin-square"></i>Linkedin</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://www.facebook.com/william.zhang.0131" title="Facebook &rarr; https://www.facebook.com/william.zhang.0131" rel="noopener" target="_blank"><i class="fa fa-fw fa-facebook"></i>Facebook</a>
+      </span>
+    
+  </div>
+
+
+
+
+
+
 
           
-
           
-            <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/z-william131" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="mailto:z.william131@gmail.com" target="_blank" title="Email">
-                      
-                        <i class="fa fa-fw fa-envelope"></i>Email</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://www.zhihu.com/people/william-zhang-69-84" target="_blank" title="Zhihu">
-                      
-                        <i class="fa fa-fw fa-globe"></i>Zhihu</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://www.linkedin.com/in/william-zhang-17b032b5" target="_blank" title="Linkedin">
-                      
-                        <i class="fa fa-fw fa-linkedin-square"></i>Linkedin</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://www.facebook.com/william.zhang.0131" target="_blank" title="Facebook">
-                      
-                        <i class="fa fa-fw fa-facebook"></i>Facebook</a>
-                  </span>
-                
-            </div>
-          
-
-          
-          
-
-          
-          
-
-          
-
         </div>
-      </section>
+      </div>
 
       
 
-      
-        <div class="back-to-top">
-          <i class="fa fa-arrow-up"></i>
-          
-        </div>
       
 
     </div>
   </aside>
+  <div id="sidebar-dimmer"></div>
 
 
         
@@ -1080,17 +2042,17 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love">
+        <div class="copyright">&copy; 2017 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">乔为 William</span>
 
   
+
+  
 </div>
 
-
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
@@ -1100,6 +2062,7 @@
 
 
         
+
 
 
 
@@ -1112,6 +2075,15 @@
     </footer>
 
     
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
 
     
 
@@ -1119,7 +2091,7 @@
 
   
 
-<script type="text/javascript">
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
@@ -1133,15 +2105,6 @@
 
 
 
-  
-
-
-
-
-
-
-  
-  
 
 
 
@@ -1151,51 +2114,30 @@
 
   
   
-    <script type="text/javascript" src="lib/jquery/index.js?v=2.1.3"></script>
-  
 
-  
-  
-    <script type="text/javascript" src="lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
 
-  
-  
-    <script type="text/javascript" src="lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
 
-  
-  
-    <script type="text/javascript" src="lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
 
-  
-  
-    <script type="text/javascript" src="lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
 
-  
-  
-    <script type="text/javascript" src="lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
 
-  
-  
-    <script type="text/javascript" src="lib/three/three.min.js"></script>
-  
 
-  
-  
-    <script type="text/javascript" src="lib/three/canvas_lines.min.js"></script>
-  
 
 
   
+  <script src="lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
 
-  <script type="text/javascript" src="js/src/utils.js?v=5.1.4"></script>
 
-  <script type="text/javascript" src="js/src/motion.js?v=5.1.4"></script>
+
+  <script src="js/utils.js?v=7.2.0"></script>
+
+  <script src="js/motion.js?v=7.2.0"></script>
 
 
 
@@ -1203,94 +2145,139 @@
   
 
 
-  <script type="text/javascript" src="js/src/affix.js?v=5.1.4"></script>
+  <script src="js/affix.js?v=7.2.0"></script>
 
-  <script type="text/javascript" src="js/src/schemes/pisces.js?v=5.1.4"></script>
+  <script src="js/schemes/pisces.js?v=7.2.0"></script>
 
-
-
-  
-
-  
-
-
-  <script type="text/javascript" src="js/src/bootstrap.js?v=5.1.4"></script>
 
 
 
   
 
+  <script src="js/next-boot.js?v=7.2.0"></script>
 
   
 
+  
+
+  
+
+
+  
+  
+
+  
+  
     
-      <script id="dsq-count-scr" src="https://William.disqus.com/count.js" async></script>
+      
     
-
+      
     
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+    
   
 
   
-
+    
+      <script type="text/x-mathjax-config">
   
 
-  
-  
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
 
-  
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
         }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
         }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// GET RESPONSIVE HEIGHT PASSED FROM IFRAME
+
+window.addEventListener("message", function(e) {
+  var data = e.data;
+  if ((typeof data === 'string') && (data.indexOf('ciu_embed') > -1)) {
+    var featureID = data.split(':')[1];
+    var height = data.split(':')[2];
+    $(`iframe[data-feature=${featureID}]`).height(parseInt(height) + 30);
+  }
+}, false);
+</script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config("");
 </script>
@@ -1308,10 +2295,13 @@
 </script>
 <!-- End: Injected MathJax -->
 <!-- hexo-inject:end -->
-  
 
 
-  
+
+
+
+
+
 
   
 
